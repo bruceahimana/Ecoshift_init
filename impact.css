@@ -1,0 +1,390 @@
+/* ===========================
+   IMPACT SECTION - PREVENT HORIZONTAL SHAKING
+=========================== */
+.impact {
+    text-align: center;
+    padding: 5rem 10%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fff9 100%);
+    border-radius: 15px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.impact h2 {
+    font-size: 2.8rem;
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.impact h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1fa971, #0f7a4a);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.impact p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Impact Statistics */
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.impact-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.impact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.impact-item h3 {
+    font-size: 2.5rem;
+    color: #0f7a4a;
+    margin-bottom: 0.5rem;
+}
+
+.impact-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.stat-detail {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+}
+
+/* CHARTS SECTION */
+.impact-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.chart-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+    color: #0f7a4a;
+    margin-bottom: 1.5rem;
+}
+
+.chart-placeholder {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    height: 200px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-bar {
+    flex: 1;
+    background: linear-gradient(to top, #1fa971, #0f7a4a);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.pie-chart-placeholder {
+    display: flex;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pie-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+    
+.story-card img {
+    height: 150px;
+    object-position: center;
+}
+    
+.story-card:hover img {
+    transform: scale(1.02);
+}
+
+/* SUCCESS STORIES */
+.success-stories {
+    margin: 4rem 0;
+}
+
+.success-stories h3 {
+    color: #0f7a4a;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.story-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.story-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(15, 122, 74, 0.2);
+}
+
+.story-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+}
+
+.story-card:hover img {
+    transform: scale(1.05);
+}
+
+.story-content {
+    padding: 1.8rem;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-content h4 {
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+}
+
+.story-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.story-author {
+    font-style: italic;
+    color: #888;
+}
+
+/* FUTURE GOALS */
+.future-goals {
+    margin: 4rem 0;
+    padding: 3rem;
+    background: linear-gradient(135deg, #1fa971 0%, #0f7a4a 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.future-goals h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.goal-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.goal-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.goal-item p {
+    line-height: 1.6;
+}
+
+/* CALL TO ACTION */
+.impact-cta {
+    margin: 4rem 0 2rem 0;
+    padding: 3rem;
+    background: linear-gradient(135deg, #1fa971 0%, #0f7a4a 100%);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.impact-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.impact-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.primary-btn {
+    background: white;
+    color: #1fa971;
+    font-weight: bold;
+}
+
+.primary-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #1fa971;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact {
+        padding: 3rem 5%;
+    }
+    
+    .impact h2 {
+        font-size: 2.2rem;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-charts {
+        grid-template-columns: 1fr;
+    }
+    
+    .story-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .story-card img {
+        height: 180px;
+    }
+    
+    .story-content {
+        padding: 1.5rem;
+    }
+    
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-card img {
+        height: 160px;
+    }
+    
+    .story-content {
+        padding: 1.2rem;
+    }
+    
+    .success-stories h3 {
+        font-size: 1.8rem;
+    }
+}

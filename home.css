@@ -1,0 +1,2898 @@
+/* ===========================
+   MODERNIZED HOME PAGE - CONTEMPORARY DESIGN
+=========================== */
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #334155;
+    line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+    position: relative;
+}
+
+/* ===========================
+   MODERN HERO SLIDER - EXTREMELY LARGE PHOTOS
+=========================== */
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    min-height: 1000px; /* Very large minimum height */
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f7a4a 0%, #1fa971 100%);
+}
+
+.slider-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 2%; /* Minimal padding */
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 950px;
+    gap: 1.5rem;        /* Minimal spacing */
+    padding: 1rem 0;    /* Minimal padding */
+}
+
+.slide-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    flex: 2;            /* Photo takes most space */
+    min-height: 700px;  /* Very large minimum height */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 750px;      /* Extremely large height */
+    max-width: 1400px;  /* Extremely large width */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        0 0 0 10px rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+.slide-text {
+    color: white;
+    text-align: center;
+    padding: 1.5rem;    /* Minimal padding */
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+}
+
+.slide-text.bottom-text {
+    background: rgba(15, 122, 74, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;     /* Minimal padding */
+    min-height: 150px;  /* Very small minimum height */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.slide-text h1 {
+    font-size: 2rem;    /* Keep text readable but smaller */
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+.slide-text p {
+    font-size: 0.9rem;  /* Keep text small */
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.slide-cta {
+    display: flex;
+    gap: 0.8rem;        /* Minimal gap */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 0.7rem 1.5rem;  /* Small buttons */
+    border: none;
+    border-radius: 50px;
+    font-size: 0.8rem;       /* Small font */
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 150px;        /* Small width */
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.8px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #0f7a4a 0%, #1fa971 50%, #2bcc88 100%);
+    background-size: 200% 200%;
+    color: white;
+    border: 3px solid #0f7a4a;
+    box-shadow: 
+        0 10px 30px rgba(15, 122, 74, 0.3),
+        0 0 0 2px rgba(255, 255, 255, 0.3);
+    animation: gradientPulse 3s ease infinite;
+}
+
+.secondary-btn {
+    background: white;
+    color: #0f7a4a;
+    border: 3px solid #0f7a4a;
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(15, 122, 74, 0.1);
+    position: relative;
+    z-index: 2;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 
+        0 20px 50px rgba(15, 122, 74, 0.5),
+        0 0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(15, 122, 74, 0.3);
+    background: linear-gradient(135deg, #1fa971 0%, #2bcc88 50%, #4cd137 100%);
+    border-color: #1fa971;
+    animation: none;
+}
+
+.secondary-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 0 0 3px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(15, 122, 74, 0.2);
+    color: #0f7a4a;
+    border-color: #1fa971;
+    background: white;
+}
+
+@keyframes gradientPulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR EXTREMELY LARGE PHOTOS
+=========================== */
+@media (min-width: 1600px) {
+    .image-wrapper {
+        height: 800px;      /* Maximum size */
+        max-width: 1500px;  /* Maximum width */
+    }
+    
+    .slider-content {
+        min-height: 1000px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .image-wrapper {
+        height: 700px;      /* Very large */
+        max-width: 1300px;  /* Very wide */
+    }
+    
+    .slider-content {
+        min-height: 900px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 1.2rem;
+        min-height: 850px;
+        padding: 0.8rem 0;
+    }
+    
+    .image-wrapper {
+        height: 650px;      /* Large */
+        max-width: 1200px;  /* Wide */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 130px;
+        padding: 1.2rem;
+        max-width: 1200px;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 140px;
+        padding: 0.6rem 1.3rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 1rem;
+        min-height: 800px;
+        padding: 0.5rem 0;
+    }
+    
+    .image-wrapper {
+        height: 600px;      /* Large */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 120px;
+        padding: 1rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.75rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 130px;
+        padding: 0.5rem 1.1rem;
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 750px;
+    }
+    
+    .slider-content {
+        gap: 0.8rem;
+        min-height: 750px;
+        padding: 0.3rem 0;
+    }
+    
+    .image-wrapper {
+        height: 550px;      /* Large */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 100px;
+        padding: 0.8rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.7rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 120px;
+        padding: 0.4rem 1rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        gap: 0.5rem;
+        padding: 0.2rem 1%;
+        min-height: 700px;
+    }
+    
+    .image-wrapper {
+        height: 500px;      /* Large */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 80px;
+        padding: 0.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.65rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.55rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR MAXIMUM PHOTO SIZE
+=========================== */
+@media (max-width: 1400px) {
+    .image-wrapper {
+        height: 600px;      /* Large photo height */
+        max-width: 1100px;  /* Large photo width */
+    }
+    
+    .slider-content {
+        height: 95vh;
+        min-height: 850px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 1.8rem;
+        height: 92vh;
+        min-height: 800px;
+        padding: 1.5rem 0;
+    }
+    
+    .image-wrapper {
+        height: 550px;      /* Large photo height */
+        max-width: 1000px;  /* Large photo width */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 180px;
+        padding: 1.8rem;
+        max-width: 1000px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.9rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 160px;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 1.5rem;
+        height: auto;
+        min-height: 750px;
+        padding: 1.5rem 0;
+    }
+    
+    .image-wrapper {
+        height: 500px;      /* Large photo height */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 160px;
+        padding: 1.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.85rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 150px;
+        padding: 0.6rem 1.3rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        gap: 1.2rem;
+        min-height: 700px;
+        padding: 1rem 0;
+    }
+    
+    .image-wrapper {
+        height: 450px;      /* Large photo height */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 140px;
+        padding: 1.2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 140px;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slider-content {
+        gap: 1rem;
+        padding: 1rem 2%;
+        min-height: 650px;
+    }
+    
+    .image-wrapper {
+        height: 400px;      /* Large photo height */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 120px;
+        padding: 1rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.75rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.65rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR LARGER PHOTOS
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2rem;
+        height: 90vh;
+        min-height: 750px;
+    }
+    
+    .image-wrapper {
+        height: 500px;      /* Increased photo height */
+        max-width: 900px;   /* Increased photo width */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 220px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.9rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 160px;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 1.8rem;
+        height: auto;
+        min-height: 700px;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 450px;      /* Increased photo height */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 200px;
+        padding: 2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.85rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 150px;
+        padding: 0.6rem 1.3rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        min-height: 650px;
+    }
+    
+    .image-wrapper {
+        height: 400px;      /* Increased photo height */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 180px;
+        padding: 1.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 140px;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 600px;
+    }
+    
+    .slider-content {
+        gap: 1.2rem;
+        padding: 1.5rem 3%;
+        min-height: 600px;
+    }
+    
+    .image-wrapper {
+        height: 350px;      /* Increased photo height */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 160px;
+        padding: 1.2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.75rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.65rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR MINIMAL TEXT
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2rem;
+        height: 88vh;
+        min-height: 700px;
+    }
+    
+    .image-wrapper {
+        height: 400px;  /* Keep photo size */
+        max-width: 700px;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 220px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;  /* Reduced text size */
+    }
+    
+    .slide-text p {
+        font-size: 0.9rem;  /* Reduced text size */
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 160px;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 1.8rem;
+        height: auto;
+        min-height: 650px;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 350px;  /* Keep photo size */
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 200px;
+        padding: 2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;  /* Reduced text size */
+    }
+    
+    .slide-text p {
+        font-size: 0.85rem;  /* Reduced text size */
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 150px;
+        padding: 0.6rem 1.3rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 600px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        min-height: 600px;
+    }
+    
+    .image-wrapper {
+        height: 300px;  /* Keep photo size */
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 180px;
+        padding: 1.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.6rem;  /* Reduced text size */
+    }
+    
+    .slide-text p {
+        font-size: 0.8rem;  /* Reduced text size */
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 140px;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 550px;
+    }
+    
+    .slider-content {
+        gap: 1.2rem;
+        padding: 1.5rem 3%;
+        min-height: 550px;
+    }
+    
+    .image-wrapper {
+        height: 250px;  /* Keep photo size */
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        min-height: 160px;
+        padding: 1.2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.4rem;  /* Reduced text size */
+    }
+    
+    .slide-text p {
+        font-size: 0.75rem;  /* Reduced text size */
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.65rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR COMPACT LAYOUT
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2rem;
+        height: 85vh;
+        min-height: 650px;
+    }
+    
+    .image-wrapper {
+        height: 400px;
+        max-width: 700px;
+    }
+    
+    .slide-text {
+        padding: 2rem;
+        max-width: 750px;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2rem;
+        min-height: 220px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 200px;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 1.8rem;
+        height: auto;
+        min-height: 600px;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 350px;
+        max-width: 90%;
+    }
+    
+    .slide-text {
+        padding: 1.8rem 1.5rem;
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.8rem;
+        min-height: 200px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 180px;
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 600px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        min-height: 550px;
+    }
+    
+    .image-wrapper {
+        height: 300px;
+    }
+    
+    .slide-text {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 160px;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 550px;
+    }
+    
+    .slider-content {
+        gap: 1.2rem;
+        padding: 1.5rem 3%;
+        min-height: 500px;
+    }
+    
+    .image-wrapper {
+        height: 250px;
+        max-width: 95%;
+    }
+    
+    .slide-text {
+        padding: 1.2rem 1rem;
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.2rem;
+        min-height: 160px;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .slide-text p {
+        font-size: 0.9rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR PHOTO-TOP LAYOUT
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2.5rem;
+        height: 90vh;
+        min-height: 700px;
+    }
+    
+    .image-wrapper {
+        height: 450px;
+        max-width: 800px;
+    }
+    
+    .slide-text {
+        padding: 2.5rem;
+        max-width: 850px;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2.5rem;
+        min-height: 280px;
+    }
+    
+    .slide-text h1 {
+        font-size: 3.3rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.4rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 250px;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 2rem;
+        height: auto;
+        min-height: 750px;
+        padding: 3rem 0;
+    }
+    
+    .image-wrapper {
+        height: 400px;
+        max-width: 90%;
+    }
+    
+    .slide-text {
+        padding: 2rem 1.5rem;
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2rem;
+        min-height: 250px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 220px;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        gap: 1.8rem;
+        min-height: 650px;
+    }
+    
+    .image-wrapper {
+        height: 350px;
+    }
+    
+    .slide-text {
+        padding: 1.8rem 1.2rem;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.8rem;
+        min-height: 220px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.2rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 200px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        padding: 2rem 3%;
+        min-height: 600px;
+    }
+    
+    .image-wrapper {
+        height: 300px;
+        max-width: 95%;
+    }
+    
+    .slide-text {
+        padding: 1.5rem 1rem;
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.5rem;
+        min-height: 200px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR INCREASED HEIGHT
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2.5rem;
+        height: 90vh;
+        min-height: 700px;
+    }
+    
+    .image-wrapper {
+        max-height: 500px;
+    }
+    
+    .slide-text {
+        padding: 2.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 3rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2.5rem;
+        height: auto;
+        min-height: 800px;
+        padding: 3rem 0;
+    }
+    
+    .slide-text {
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .slide-cta {
+        justify-content: center;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 220px;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 750px;
+    }
+    
+    .slider-content {
+        gap: 2rem;
+        min-height: 700px;
+    }
+    
+    .image-wrapper {
+        max-height: 400px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.2rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 200px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        padding: 2rem 3%;
+        min-height: 650px;
+    }
+    
+    .slide-text {
+        padding: 1.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR MAXIMUM HEIGHT
+=========================== */
+@media (max-width: 1200px) {
+    .hero-slider {
+        min-height: 800px;
+    }
+    
+    .slider-content {
+        height: 90vh;
+        min-height: 700px;
+        gap: 3rem;
+    }
+    
+    .image-wrapper {
+        height: 430px;
+        max-width: 750px;
+    }
+    
+    .slide-text {
+        padding: 3rem;
+        max-width: 800px;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 3rem;
+        min-height: 250px;
+    }
+    
+    .slide-text h1 {
+        font-size: 3.3rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.4rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.3rem;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-slider {
+        min-height: 750px;
+    }
+    
+    .slider-content {
+        height: auto;
+        min-height: 700px;
+        padding: 3rem 0;
+    }
+    
+    .image-wrapper {
+        height: 380px;
+        max-width: 90%;
+    }
+    
+    .slide-text {
+        padding: 2.5rem 2rem;
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2.5rem;
+        min-height: 220px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.8rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 220px;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        min-height: 650px;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 330px;
+    }
+    
+    .slide-text {
+        padding: 2rem 1.5rem;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2rem;
+        min-height: 200px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.4rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.2rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 200px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slider-content {
+        min-height: 600px;
+        gap: 1.8rem;
+        padding: 1.8rem 0;
+    }
+    
+    .image-wrapper {
+        height: 280px;
+        max-width: 95%;
+    }
+    
+    .slide-text {
+        padding: 1.8rem 1.2rem;
+        max-width: 95%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 1.8rem;
+        min-height: 180px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR ENHANCED SIZE
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 2.5rem;
+        max-width: 95%;
+        height: 85vh;
+    }
+    
+    .image-wrapper {
+        height: 400px;
+        max-width: 700px;
+    }
+    
+    .slide-text {
+        padding: 2.5rem;
+        max-width: 750px;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2.5rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 3rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 2rem;
+        height: auto;
+        min-height: 750px;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 350px;
+        max-width: 90%;
+    }
+    
+    .slide-text {
+        padding: 2rem 1.5rem;
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 200px;
+        padding: 1.1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: 700px;
+    }
+    
+    .slider-content {
+        gap: 1.8rem;
+        min-height: 650px;
+    }
+    
+    .image-wrapper {
+        height: 300px;
+    }
+    
+    .slide-text {
+        padding: 1.8rem 1.2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 180px;
+        padding: 1rem 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        min-height: 650px;
+    }
+    
+    .slider-content {
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+        min-height: 600px;
+    }
+    
+    .image-wrapper {
+        height: 250px;
+        max-width: 95%;
+    }
+    
+    .slide-text {
+        padding: 1.5rem 1rem;
+        max-width: 95%;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 1rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR TEXT BOTTOM LAYOUT
+=========================== */
+@media (max-width: 992px) {
+    .slider-content {
+        gap: 2rem;
+        height: auto;
+        min-height: 80vh;
+        padding: 2rem 0;
+    }
+    
+    .image-wrapper {
+        height: 350px;
+        max-width: 90%;
+    }
+    
+    .slide-text {
+        padding: 2rem 1.5rem;
+        max-width: 90%;
+    }
+    
+    .slide-text.bottom-text {
+        padding: 2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-content {
+        gap: 1.5rem;
+    }
+    
+    .image-wrapper {
+        height: 300px;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 180px;
+        padding: 1rem 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-content {
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+    }
+    
+    .image-wrapper {
+        height: 250px;
+        max-width: 95%;
+    }
+    
+    .slide-text {
+        padding: 1.5rem 1rem;
+        max-width: 95%;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 1rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR ENHANCED SPACING
+=========================== */
+@media (max-width: 1200px) {
+    .slider-content {
+        gap: 3rem;  /* Reduced spacing for medium screens */
+    }
+    
+    .slide-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2.5rem;
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .slide-text {
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .slide-cta {
+        justify-content: center;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-content {
+        gap: 2rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .slide-text p {
+        font-size: 1.1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        min-width: 180px;
+        padding: 1rem 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-content {
+        gap: 1.5rem;
+        padding: 0 3%;
+    }
+    
+    .slide-text {
+        padding: 1rem;
+    }
+    
+    .slide-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-text p {
+        font-size: 1rem;
+    }
+    
+    .slide-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR WHITE BUTTON
+=========================== */
+@media (max-width: 768px) {
+    .slide-cta {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .primary-btn, .secondary-btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        min-width: 100%;
+    }
+}
+
+/* ===========================
+   MODERN ANIMATIONS
+=========================== */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ===========================
+   MODERN QUICK STATS
+=========================== */
+.quick-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 4rem 8%;
+    background: white;
+    margin: 4rem auto;
+    border-radius: 25px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(15, 122, 74, 0.03);
+    animation: slideInUp 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.quick-stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0f7a4a, #1fa971, #2bcc88);
+}
+
+.stat-item {
+    text-align: center;
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(15, 122, 74, 0.02) 0%, rgba(31, 169, 113, 0.02) 100%);
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 122, 74, 0.1);
+    background: linear-gradient(135deg, rgba(15, 122, 74, 0.05) 0%, rgba(31, 169, 113, 0.05) 100%);
+}
+
+.stat-item:nth-child(1) { animation-delay: 0.1s; }
+.stat-item:nth-child(2) { animation-delay: 0.2s; }
+.stat-item:nth-child(3) { animation-delay: 0.3s; }
+.stat-item:nth-child(4) { animation-delay: 0.4s; }
+
+.stat-item h3 {
+    font-size: 3rem;
+    color: #0f7a4a;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #0f7a4a, #1fa971);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat-item p {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===========================
+   MODERN FOUNDERS SECTION
+=========================== */
+.home-founders {
+    padding: 3rem 5%;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    text-align: center;
+    animation: slideInUp 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.home-founders::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(15, 122, 74, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 70% 70%, rgba(31, 169, 113, 0.03) 0%, transparent 40%);
+}
+
+.founders-header {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.founders-header h2 {
+    font-size: 2.8rem;
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.founders-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.founder-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(15, 122, 74, 0.03);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.founder-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0f7a4a, #1fa971);
+}
+
+.founder-card:nth-child(1) { animation-delay: 0.2s; }
+.founder-card:nth-child(2) { animation-delay: 0.4s; }
+
+.founder-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgba(15, 122, 74, 0.1);
+}
+
+.founder-image-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 1.8rem;
+}
+
+.founder-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 15%;
+    border: 5px solid #1fa971;
+    box-shadow: 0 10px 30px rgba(31, 169, 113, 0.25);
+    filter: brightness(1.05) contrast(1.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.founder-card img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 40px rgba(31, 169, 113, 0.35);
+}
+
+.placeholder-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+    border: 5px solid #1fa971;
+    box-shadow: 0 10px 30px rgba(31, 169, 113, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.placeholder-image span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+    animation: pulse 2s infinite;
+}
+
+.placeholder-image p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 500;
+}
+
+.founder-card h3 {
+    color: #0f7a4a;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.founder-title {
+    color: #1fa971;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.founder-bio {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===========================
+   MODERN MISSION & VISION
+=========================== */
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 5%;
+    margin: 2rem auto;
+    max-width: 1200px;
+    animation: slideInUp 0.8s ease-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.mission-card, .vision-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(15, 122, 74, 0.03);
+    text-align: center;
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card::before, .vision-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.mission-card::before {
+    background: linear-gradient(90deg, #0f7a4a, #1fa971);
+}
+
+.vision-card::before {
+    background: linear-gradient(90deg, #1fa971, #2bcc88);
+}
+
+.mission-card { animation-delay: 0.2s; }
+.vision-card { animation-delay: 0.4s; }
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgba(15, 122, 74, 0.1);
+}
+
+.mission-card h2, .vision-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #0f7a4a;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+}
+
+.mission-card p, .vision-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #64748b;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===========================
+   OUR INNOVATIONS SECTION - NEW
+=========================== */
+.our-innovations {
+    padding: 3rem 5%;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    text-align: center;
+    animation: slideInUp 0.8s ease-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.innovations-header {
+    margin-bottom: 2rem;
+}
+
+.innovations-header h2 {
+    font-size: 2.8rem;
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.innovations-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.innovations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.innovation-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(15, 122, 74, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.innovation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0f7a4a, #1fa971, #2bcc88);
+}
+
+.innovation-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.15),
+        0 0 0 2px rgba(15, 122, 74, 0.1);
+}
+
+.innovation-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.innovation-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+    filter: brightness(1.05) contrast(1.1);
+}
+
+.innovation-card:hover .innovation-image {
+    transform: scale(1.05);
+}
+
+.image-placeholder-small {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.image-placeholder-small span {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.image-placeholder-small p {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.innovation-content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.innovation-content h3 {
+    color: #0f7a4a;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.innovation-content p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    flex-grow: 1;
+}
+
+.innovation-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    background: linear-gradient(135deg, rgba(15, 122, 74, 0.1), rgba(31, 169, 113, 0.1));
+    color: #0f7a4a;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(15, 122, 74, 0.2);
+    font-family: 'Inter', sans-serif;
+}
+
+.innovation-btn {
+    background: linear-gradient(135deg, #0f7a4a, #1fa971);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(15, 122, 74, 0.2);
+    border: 2px solid #0f7a4a;
+    font-family: 'Inter', sans-serif;
+    width: fit-content;
+    justify-content: center;
+}
+
+.innovation-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(15, 122, 74, 0.3);
+    background: linear-gradient(135deg, #1fa971, #0f7a4a);
+    border-color: #1fa971;
+}
+
+.innovation-btn i {
+    transition: transform 0.3s ease;
+}
+
+.innovation-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* =========================== * *
+ * Rest of CSS continues with modern styling for Services, Projects, Testimonials, CTA sections * * /
+
+/* ===========================
+   COMMUNITY VOICES SECTION - NEW
+=========================== */
+.community-voices {
+    padding: 3rem 5%;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    text-align: center;
+    animation: slideInUp 0.8s ease-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.voices-header {
+    margin-bottom: 2rem;
+}
+
+.voices-header h2 {
+    font-size: 2.8rem;
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.voices-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.voices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.voice-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(15, 122, 74, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.voice-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1fa971, #2bcc88, #4cd137);
+}
+
+.voice-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 0 0 2px rgba(31, 169, 113, 0.1);
+}
+
+.voice-image-container {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.voice-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+    filter: brightness(1.05) contrast(1.1);
+}
+
+.voice-card:hover .voice-image {
+    transform: scale(1.05);
+}
+
+.voice-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.voice-placeholder span {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.voice-placeholder p {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.voice-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.voice-info {
+    margin-bottom: 1rem;
+}
+
+.voice-info h3 {
+    color: #0f7a4a;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.voice-role {
+    color: #1fa971;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.voice-quote {
+    color: #334155;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.voice-quote::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+    font-size: 3rem;
+    color: #1fa971;
+    font-family: Georgia, serif;
+    opacity: 0.3;
+}
+
+.voice-impact {
+    margin-top: auto;
+}
+
+.impact-badge {
+    background: linear-gradient(135deg, rgba(31, 169, 113, 0.15), rgba(43, 204, 136, 0.15));
+    color: #1fa971;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(31, 169, 113, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===========================
+   READY TO MAKE A DIFFERENCE SECTION - NEW
+=========================== */
+.make-difference {
+    padding: 3rem 5%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    text-align: center;
+    animation: slideInUp 0.8s ease-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.difference-header {
+    margin-bottom: 2rem;
+}
+
+.difference-header h2 {
+    font-size: 2.8rem;
+    color: #0f7a4a;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.difference-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.difference-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(15, 122, 74, 0.05);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.difference-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transition: all 0.3s ease;
+}
+
+.primary-card::before {
+    background: linear-gradient(90deg, #0f7a4a, #1fa971);
+}
+
+.secondary-card::before {
+    background: linear-gradient(90deg, #1fa971, #2bcc88);
+}
+
+.accent-card::before {
+    background: linear-gradient(90deg, #2bcc88, #4cd137);
+}
+
+.success-card::before {
+    background: linear-gradient(90deg, #4cd137, #37b837);
+}
+
+.difference-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.15),
+        0 0 0 2px currentColor;
+}
+
+.primary-card:hover {
+    box-shadow: 
+        0 20px 50px rgba(15, 122, 74, 0.2),
+        0 0 0 2px #0f7a4a;
+}
+
+.secondary-card:hover {
+    box-shadow: 
+        0 20px 50px rgba(31, 169, 113, 0.2),
+        0 0 0 2px #1fa971;
+}
+
+.difference-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.primary-card .difference-icon {
+    color: #0f7a4a;
+}
+
+.secondary-card .difference-icon {
+    color: #1fa971;
+}
+
+.accent-card .difference-icon {
+    color: #2bcc88;
+}
+
+.success-card .difference-icon {
+    color: #4cd137;
+}
+
+.difference-card:hover .difference-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.difference-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.difference-content h3 {
+    color: #0f7a4a;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.difference-content p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    flex-grow: 1;
+}
+
+.difference-arrow {
+    color: #0f7a4a;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.difference-card:hover .difference-arrow {
+    transform: translateX(8px);
+    color: currentColor;
+}
+
+/* =========================== * *
+ * Previous CSS remains unchanged * * /
+
+/* ===========================
+   RESPONSIVE DESIGN FOR NEW SECTIONS
+=========================== */
+@media (max-width: 1024px) {
+    .voices-grid, .difference-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+    }
+    
+    .voices-header h2, .difference-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .community-voices, .make-difference {
+        padding: 4rem 5%;
+    }
+    
+    .voices-grid, .difference-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .voices-header, .difference-header {
+        margin-bottom: 3rem;
+    }
+    
+    .voices-header h2, .difference-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .voice-content, .difference-content {
+        padding: 1.5rem;
+    }
+    
+    .voice-info h3, .difference-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .difference-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .community-voices, .make-difference {
+        padding: 3rem 4%;
+    }
+    
+    .voices-header h2, .difference-header h2 {
+        font-size: 2rem;
+    }
+    
+    .voice-image-container {
+        height: 160px;
+    }
+    
+    .voice-content, .difference-content {
+        padding: 1.2rem;
+    }
+    
+    .difference-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* ===========================
+   DARK MODE SUPPORT FOR HOME PAGE
+=========================== */
+
+/* Light mode variables (default) */
+:root {
+  --home-bg-primary: #ffffff;
+  --home-bg-secondary: #f8fafc;
+  --home-text-primary: #0f172a;
+  --home-text-secondary: #64748b;
+  --home-accent-primary: #0f7a4a;
+  --home-accent-secondary: #1fa971;
+  --home-card-bg: #ffffff;
+  --home-border-color: rgba(15, 122, 74, 0.1);
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --home-bg-primary: #0f172a;
+  --home-bg-secondary: #1e293b;
+  --home-text-primary: #f1f5f9;
+  --home-text-secondary: #94a3b8;
+  --home-accent-primary: #4cd137;
+  --home-accent-secondary: #3498db;
+  --home-card-bg: #1e293b;
+  --home-border-color: rgba(76, 209, 55, 0.2);
+}
+
+/* Base Home Styles */
+.home {
+  background-color: var(--home-bg-primary);
+  color: var(--home-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hero Section */
+.hero-slider {
+  background: linear-gradient(135deg, var(--home-accent-primary) 0%, var(--home-accent-secondary) 100%);
+}
+
+[data-theme="dark"] .hero-slider {
+  background: linear-gradient(135deg, #0a5a3a 0%, #157a51 100%);
+}
+
+.hero-slider h1,
+.hero-slider h2 {
+  color: white;
+}
+
+.hero-slider p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Cards and Sections */
+.card,
+.stat-item,
+.project-card,
+.service-card {
+  background: var(--home-card-bg);
+  border: 1px solid var(--home-border-color);
+  color: var(--home-text-primary);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .stat-item:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .service-card:hover {
+  border-color: rgba(76, 209, 55, 0.4);
+  box-shadow: 0 10px 25px rgba(76, 209, 55, 0.15);
+}
+
+/* Text elements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--home-text-primary);
+}
+
+p {
+  color: var(--home-text-secondary);
+}
+
+/* Buttons */
+.primary-btn {
+  background: linear-gradient(135deg, var(--home-accent-primary) 0%, var(--home-accent-secondary) 50%, #2bcc88 100%);
+  color: white;
+  border: 3px solid var(--home-accent-primary);
+}
+
+.secondary-btn {
+  background: white;
+  color: var(--home-accent-primary);
+  border: 3px solid var(--home-accent-primary);
+}
+
+[data-theme="dark"] .secondary-btn {
+  background: var(--home-card-bg);
+  color: var(--home-accent-primary);
+}
+
+[data-theme="dark"] .secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #4ade80;
+  color: #4ade80;
+}
+
+/* Stats Section */
+.quick-stats {
+  background: var(--home-bg-secondary);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: linear-gradient(135deg, #0f4c3a 0%, #1a5d4a 100%);
+}
+
+[data-theme="dark"] .testimonials {
+  background: linear-gradient(135deg, #0a362a 0%, #154a3a 100%);
+}
+
+/* Form elements */
+input, select, textarea {
+  background: var(--home-card-bg);
+  color: var(--home-text-primary);
+  border: 1px solid var(--home-border-color);
+}
+
+input::placeholder {
+  color: var(--home-text-secondary);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--home-accent-primary);
+  background: var(--home-bg-primary);
+}

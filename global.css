@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+section {
+    padding: 4rem 8%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
